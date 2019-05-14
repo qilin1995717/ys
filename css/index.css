@@ -7,8 +7,8 @@
 		  header .logo{
 			  width: 2rem;
 			  position: absolute;
-			  top: 15px;
-			  left: 15px;
+			  top: .15rem;
+			  left: .15rem;
 		  }
 		  header img {
 			  width: 100%;

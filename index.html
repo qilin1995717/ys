@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 1rem = 60px -->
+<!-- 1rem = 100px -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,16 +24,21 @@
     <link rel="stylesheet" type="text/css" href="css/utils.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
     <script type="text/javascript">
-        function setRootSize(){
-            var docWid = window.document.documentElement,
-                width = docWid.getBoundingClientRect().width,
-                fontSize = (width >= 450) ? (450 / 7.5) : width / 750 * 100;
-                docWid.style.fontSize = fontSize + 'px';
+      (function () {
+      function resize() {
+        var html = document.documentElement
+        var deviceWidth = html.clientWidth
+        if (deviceWidth > 750) {
+          deviceWidth = 750
         }
-        window.addEventListener('resize', function() {
-            setRootSize();
-        }, false);
-        setRootSize();
+        html.style.fontSize = deviceWidth / 7.5 + 'px'
+      }
+
+      resize()
+      window.onresize = function () {
+        resize()
+      }
+    })()
     </script>
 <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
