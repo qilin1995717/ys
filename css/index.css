@@ -1,15 +1,22 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-.wrap {
+
+  header { 
             width: 7.5rem;
             margin: 0 auto;
+			position: relative;
         }
-.header{
+		  header .logo{
+			  width: 2rem;
+			  position: absolute;
+			  top: 15px;
+			  left: 15px;
+		  }
+		  header img {
+			  width: 100%;
+			  height: 100%;
+		  }
+.wrap {
+	width: 7.5rem;
+	margin: 0 auto;
 	overflow: hidden;
 }
-.header img{
-	width: 100%;
-	height: 100%;
-}
+
