@@ -1,9 +1,49 @@
 
+  
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
   header { 
             width: 7.5rem;
             margin: 0 auto;
 			position: relative;
         }
+		 header .shuru{
+			 width: 90%;
+			 overflow: hidden;
+			 position: absolute;
+			 bottom: 0.15rem;
+			 left: 0.15rem;
+			 display: flex;
+			 justify-content: space-between;
+		 }
+		 header .shuru .f1{
+			 flex: 0.1;
+		 }
+		 header .shuru .fom{
+			 flex: 3;
+			 overflow: hidden;
+			 border-radius: 0.1rem;
+			 display: flex;
+			 background: rgba(255,255,255,.3);
+		 }
+		 header .shuru .fom input::-webkit-input-placeholder{
+			 color: #FFFFFF;
+		 }
+		  header .shuru .fom input{
+			  width: 100%;
+			  height: 0.42rem;
+			  font-size: 0.12rem;
+			  background: rgba(255,255,255,.3);
+			  color: #FFFFFF;
+			  border: none;
+			  padding: 0.08rem 0.1rem;
+		  }
 		  header .logo{
 			  width: 2rem;
 			  position: absolute;
@@ -18,5 +58,22 @@
 	width: 7.5rem;
 	margin: 0 auto;
 	overflow: hidden;
+}
+.wrap img{
+	width: 100%;
+	height: 100%;
+}
+.wrap .teach{
+	display: flex;
+	align-items: center;
+	padding: 0.11rem 0.15rem;
+}
+.wrap .teach .teach-r
+.wrap .teach .teach-l{
+	flex: 4;
+}
+.wrap .teach .teach-l img{
+	width: 100%;
+	height: 100%;
 }
 
