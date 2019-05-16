@@ -63,17 +63,48 @@ input[type="number"] {
 	width: 100%;
 	height: 100%;
 }
-.wrap .teach{
+.teach{
+	width: 6rem !important;
 	display: flex;
-	align-items: center;
-	padding: 0.11rem 0.15rem;
+	padding: 0.61rem 0.75rem;
 }
-.wrap .teach .teach-r
-.wrap .teach .teach-l{
+.teach-r,
+.teach-l{
 	flex: 4;
+	text-align: center;
 }
-.wrap .teach .teach-l img{
+
+.teach .teach-l img{
 	width: 100%;
 	height: 100%;
 }
-
+.swiper-button-next{
+	background-image: url(../images/next.png);
+	background-size: 100%;
+}
+.swiper-button-prev{
+	background-image: url(../images/s.png);
+	background-size: 100%;
+}
+.teach-r h2{
+	width: auto;
+	display:inline-block;
+	padding: 0.15rem;
+	color: #0b3d85;
+	font-size: 0.28rem;
+	border-bottom: 1px solid #0b3d85;
+}
+.teach-r p{
+	font-size: 0.24rem;
+	color: #1d71b0;
+	border-top: 1px solid #1d71b0;
+	padding-top: 0.05rem;
+	margin-top: 0.1rem;
+}
+.teach-r span{
+	font-size: 0.14rem;
+	color: #333333;
+	display: block;
+	line-height: 1.5;
+	margin-top: 0.2rem;
+}
